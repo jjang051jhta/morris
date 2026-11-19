@@ -120,3 +120,36 @@ body {
     }
   }
 }
+.product {
+  overflow: hidden;
+  padding: 200px 0;
+  background-color: $light-gray;
+  // display: flex;
+  // justify-content: center;
+  .container {
+    max-width: 1800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .slider {
+    li {
+      width: 420px;
+      .img-box {
+        overflow: hidden;
+        transition: all 0.25s ease;
+        &:hover {
+          border-radius: 100px 0 100px 0;
+          img {
+            transform: scale(1.1);
+          }
+        }
+        img {
+          transition: all 0.25s ease;
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

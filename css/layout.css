@@ -124,3 +124,34 @@ body {
 .main-visual .pagination .swiper-pagination-bullet-active .txt {
   transform: translateY(0);
 }
+
+.product {
+  overflow: hidden;
+  padding: 200px 0;
+  background-color: #eee;
+}
+.product .container {
+  max-width: 1800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.product .slider li {
+  width: 420px;
+}
+.product .slider li .img-box {
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+.product .slider li .img-box:hover {
+  border-radius: 100px 0 100px 0;
+}
+.product .slider li .img-box:hover img {
+  transform: scale(1.1);
+}
+.product .slider li .img-box img {
+  transition: all 0.25s ease;
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
