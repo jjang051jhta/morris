@@ -70,11 +70,6 @@ body {
 }
 .main-visual .pagination .swiper-pagination-bullet {
   overflow: hidden;
-}
-.main-visual .pagination .swiper-pagination-bullet .txt {
-  display: flex;
-  height: auto;
-  flex-direction: column;
   flex-basis: 25%;
   flex-grow: 0;
   flex-shrink: 0;
@@ -85,6 +80,14 @@ body {
   gap: 10px 0;
   border-radius: 0;
   position: relative;
+  height: auto;
+}
+.main-visual .pagination .swiper-pagination-bullet .txt {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  transform: translateY(140px);
+  transition: all 0.25s ease;
 }
 .main-visual .pagination .swiper-pagination-bullet .txt .no {
   font-size: 24px;
@@ -100,12 +103,10 @@ body {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   line-clamp: 3;
-  display: none;
 }
 .main-visual .pagination .swiper-pagination-bullet .txt .btn {
   border: 2px solid #fff;
   align-self: start;
-  display: none;
 }
 .main-visual .pagination .swiper-pagination-bullet .txt .btn:hover {
   background-color: #fff;
@@ -119,9 +120,6 @@ body {
   margin-top: 20px;
   bottom: 0px;
 }
-.main-visual .pagination .swiper-pagination-bullet-active .desc {
-  display: block;
-}
-.main-visual .pagination .swiper-pagination-bullet-active .btn {
-  display: flex;
+.main-visual .pagination .swiper-pagination-bullet-active .txt {
+  transform: translateY(0);
 }

@@ -65,20 +65,23 @@ body {
     gap: 0 20px;
     .swiper-pagination-bullet {
       overflow: hidden;
+      flex-basis: 25%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background: none;
+      width: auto;
+      opacity: 1;
+      color: #fff;
+      gap: 10px 0;
+      border-radius: 0;
+      position: relative;
+      height: auto;
       .txt {
         display: flex;
-        height: auto;
         flex-direction: column;
-        flex-basis: 25%;
-        flex-grow: 0;
-        flex-shrink: 0;
-        background: none;
-        width: auto;
-        opacity: 1;
-        color: #fff;
-        gap: 10px 0;
-        border-radius: 0;
-        position: relative;
+        gap: 15px 0;
+        transform: translateY(140px);
+        transition: all 0.25s ease;
         .no {
           font-size: 24px;
         }
@@ -89,13 +92,11 @@ body {
         .desc {
           width: 80%;
           @include ellipsis(3);
-          display: none;
         }
         .btn {
           @extend %button-base;
           border: 2px solid #fff;
           align-self: start;
-          display: none;
           &:hover {
             background-color: #fff;
             color: $text-color;
@@ -112,11 +113,8 @@ body {
       }
     }
     .swiper-pagination-bullet-active {
-      .desc {
-        display: block;
-      }
-      .btn {
-        display: flex;
+      .txt {
+        transform: translateY(0);
       }
     }
   }
