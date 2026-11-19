@@ -47,12 +47,58 @@
           <img src="../images/main/visual04.jpg" alt="" />
         </li>
       </ul>
+      <div class="pagination"></div>
     </div>
     <script>
+      const customBullets = [
+        `
+          <span class="no">01</span>
+          <p class="title">Prime Glitter Highlighter S</p>
+          <p class="desc">
+            Steady in hand, JUSTCLICK Prime.<br />
+            Seven Glitter ink colors with a comfortable Hexagonal grip.
+          </p>
+          <span class="btn">Find out more</span>
+        `,
+        `
+          <span class="no">02</span>
+          <p class="title">Prime Glitter S Antique</p>
+          <p class="desc">
+            Steady in hand, JUSTCLICK Prime.<br />
+            Seven Glitter ink colors with a comfortable Hexagonal grip.
+          </p>
+          <span class="btn">Find out more</span>
+        `,
+        `
+          <span class="no">03</span>
+          <p class="title">Prime Highlighter M mild</p>
+          <p class="desc">
+            Steady in hand, JUSTCLICK Prime.<br />
+            Seven Glitter ink colors with a comfortable Hexagonal grip.
+          </p>
+          <span class="btn">Find out more</span>
+        `,
+        `
+          <span class="no">04</span>
+          <p class="title">Sign Pen Plus</p>
+          <p class="desc">
+            Steady in hand, JUSTCLICK Prime.<br />
+            Seven Glitter ink colors with a comfortable Hexagonal grip.
+          </p>
+          <span class="btn">Find out more</span>
+        `,
+      ];
       const mainSlider = new Swiper(".main-visual", {
         loop: true,
-        speed: 1,
+        speed: 1000,
         effect: "fade",
+        pagination: {
+          el: ".main-visual .pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return `<div class="${className}"><div>나는 문자로 출력됩니다. ${index}</div></div>`;
+          },
+        },
       });
     </script>
   </body>
