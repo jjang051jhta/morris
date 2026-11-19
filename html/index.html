@@ -114,6 +114,7 @@
             </li>
           </ul>
         </div>
+        <div class="pagination"></div>
       </div>
     </section>
     <script>
@@ -183,6 +184,10 @@
         slidesPerView: "auto",
         spaceBetween: 30,
         speed: 1000,
+        pagination: {
+          el: ".product .pagination",
+          type: "progressbar",
+        },
       });
     </script>
   </body>

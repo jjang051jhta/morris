@@ -134,6 +134,8 @@ body {
   max-width: 1800px;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
+  padding-bottom: 100px;
 }
 .product .slider li {
   width: 420px;
@@ -154,4 +156,12 @@ body {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.product .pagination {
+  width: 90%;
+  top: auto;
+  bottom: 0;
+}
+.product .pagination .swiper-pagination-progressbar-fill {
+  background-color: #000000;
 }
