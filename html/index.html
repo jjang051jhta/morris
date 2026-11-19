@@ -96,7 +96,7 @@
           el: ".main-visual .pagination",
           clickable: true,
           renderBullet: function (index, className) {
-            return `<div class="${className}"><div>나는 문자로 출력됩니다. ${index}</div></div>`;
+            return `<div class="${className}">${customBullets[index]}</div>`;
           },
         },
       });
