@@ -47,11 +47,77 @@ body {
 }
 .main-visual {
   overflow: hidden;
+  position: relative;
   .visual-list {
     img {
       width: 100%;
       height: 100vh;
       object-fit: cover;
+    }
+  }
+  .pagination {
+    position: absolute;
+    bottom: 50px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+    gap: 0 20px;
+    .swiper-pagination-bullet {
+      overflow: hidden;
+      .txt {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        flex-basis: 25%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background: none;
+        width: auto;
+        opacity: 1;
+        color: #fff;
+        gap: 10px 0;
+        border-radius: 0;
+        position: relative;
+        .no {
+          font-size: 24px;
+        }
+        .title {
+          font-size: 32px;
+          font-weight: 700;
+        }
+        .desc {
+          width: 80%;
+          @include ellipsis(3);
+          display: none;
+        }
+        .btn {
+          @extend %button-base;
+          border: 2px solid #fff;
+          align-self: start;
+          display: none;
+          &:hover {
+            background-color: #fff;
+            color: $text-color;
+          }
+        }
+      }
+      .line {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        margin-top: 20px;
+        bottom: 0px;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      .desc {
+        display: block;
+      }
+      .btn {
+        display: flex;
+      }
     }
   }
 }
