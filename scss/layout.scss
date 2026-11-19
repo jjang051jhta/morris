@@ -76,11 +76,12 @@ body {
       border-radius: 0;
       position: relative;
       height: auto;
+      padding-bottom: 30px;
       .txt {
         display: flex;
         flex-direction: column;
         gap: 15px 0;
-        transform: translateY(140px);
+        transform: translateY(170px);
         transition: all 0.25s ease;
         .no {
           font-size: 24px;
