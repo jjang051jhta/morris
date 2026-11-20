@@ -13,7 +13,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward,arrow_back,arrow_forward"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/layout.css" />
@@ -114,8 +114,26 @@
             </li>
           </ul>
         </div>
-        <div class="pagination"></div>
+        <div class="pagination-box">
+          <div class="pagination"></div>
+          <div class="nav">
+            <span class="material-symbols-outlined btn-prev"> arrow_back </span>
+            <span class="material-symbols-outlined btn-next"> arrow_forward </span>
+          </div>
+        </div>
+
         <a href="" class="btn btn-link">ALL PRODUCTS <span class="material-symbols-outlined"> arrow_outward </span></a>
+      </div>
+    </section>
+    <section class="slogan">
+      <div class="container">
+        <h2>Made to write</h2>
+        <p>
+          We enrich everyday life <br />
+          with creative stationery and <br />
+          build the future together, <br />
+          with every line.
+        </p>
       </div>
     </section>
     <script>
@@ -188,6 +206,10 @@
         pagination: {
           el: ".product .pagination",
           type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".product .pagination-box .btn-next",
+          prevEl: ".product .pagination-box .btn-prev",
         },
       });
     </script>
