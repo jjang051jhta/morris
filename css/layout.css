@@ -1,4 +1,4 @@
-.main-visual .pagination .swiper-pagination-bullet .txt .btn, .btn-link {
+.pen .slider .mask a, .main-visual .pagination .swiper-pagination-bullet .txt .btn, .btn-link {
   padding: 12px 20px;
   border: none;
   border-radius: 100px;
@@ -273,4 +273,20 @@ body {
 .pen .slider .mask {
   flex-grow: 1;
   overflow: hidden;
+  margin-top: -50px;
+}
+.pen .slider .mask h3 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+.pen .slider .mask p {
+  margin-bottom: 20px;
+}
+.pen .slider .mask a {
+  border: 2px solid #333;
+  display: inline-flex;
+  align-items: center;
+}
+.pen .slider .mask a span {
+  margin-left: 20px;
 }

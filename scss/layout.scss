@@ -267,6 +267,23 @@ body {
     .mask {
       flex-grow: 1;
       overflow: hidden;
+      margin-top: -50px;
+      h3 {
+        font-size: 64px;
+        margin-bottom: 20px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      a {
+        @extend %button-base;
+        border: 2px solid #333;
+        display: inline-flex;
+        align-items: center;
+        span {
+          margin-left: 20px;
+        }
+      }
     }
   }
 }
