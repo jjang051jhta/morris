@@ -141,7 +141,7 @@ body {
 }
 .product {
   overflow: hidden;
-  padding: 200px 0;
+  padding: 200px 0 0;
   background-color: $light-gray;
   .container {
     overflow: hidden;
@@ -222,7 +222,8 @@ body {
   }
 }
 .slogan {
-  padding: 150px 0;
+  padding-bottom: 150px;
+  background-color: $light-gray;
   .container {
     display: flex;
     justify-content: space-between;
@@ -234,5 +235,13 @@ body {
   }
   p {
     font-size: clamp(24px, 2vw, 64px); //반응형 웹
+  }
+}
+.pen {
+  .slider {
+    .mask {
+      width: 1200px;
+      overflow: hidden;
+    }
   }
 }
