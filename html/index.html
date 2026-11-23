@@ -265,6 +265,86 @@
         </div>
       </div>
     </section>
+    <section class="brand">
+      <div class="container">
+        <h2 class="heading02">BRAND</h2>
+        <div class="slider">
+          <div class="pagination"></div>
+          <div class="mask">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/brand01.jpg" alt="" />
+                </div>
+                <div class="info-box">
+                  <h3 class="logo"><img src="../images/main/brand-logo01.png" alt="" /></h3>
+                  <div class="info">
+                    <p class="slogan">Write in a Smoother Flow.</p>
+                    <p class="desc">
+                      EASYFLUID is Morris’s ballpoint pen brand designed to transform the writing experience through the flow of ink. With its
+                      ultra-low viscosity hybrid ink, it delivers a smoother and more consistent writing feel, offering greater comfort and stability
+                      in everyday writing.
+                    </p>
+                    <a href="" class="btn">VIEW ALL <span class="material-symbols-outlined"> arrow_outward </span></a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/brand02.jpg" alt="" />
+                </div>
+                <div class="info-box">
+                  <h3 class="logo"><img src="../images/main/brand-logo02.png" alt="" /></h3>
+                  <div class="info">
+                    <p class="slogan">Write in a Smoother Flow.</p>
+                    <p class="desc">
+                      EASYFLUID is Morris’s ballpoint pen brand designed to transform the writing experience through the flow of ink. With its
+                      ultra-low viscosity hybrid ink, it delivers a smoother and more consistent writing feel, offering greater comfort and stability
+                      in everyday writing.
+                    </p>
+                    <a href="" class="btn">VIEW ALL <span class="material-symbols-outlined"> arrow_outward </span></a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/brand03.jpg" alt="" />
+                </div>
+                <div class="info-box">
+                  <h3 class="logo"><img src="../images/main/brand-logo03.png" alt="" /></h3>
+                  <div class="info">
+                    <p class="slogan">Write in a Smoother Flow.</p>
+                    <p class="desc">
+                      EASYFLUID is Morris’s ballpoint pen brand designed to transform the writing experience through the flow of ink. With its
+                      ultra-low viscosity hybrid ink, it delivers a smoother and more consistent writing feel, offering greater comfort and stability
+                      in everyday writing.
+                    </p>
+                    <a href="" class="btn">VIEW ALL <span class="material-symbols-outlined"> arrow_outward </span></a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/brand04.jpg" alt="" />
+                </div>
+                <div class="info-box">
+                  <h3 class="logo"><img src="../images/main/brand-logo04.png" alt="" /></h3>
+                  <div class="info">
+                    <p class="slogan">Write in a Smoother Flow.</p>
+                    <p class="desc">
+                      EASYFLUID is Morris’s ballpoint pen brand designed to transform the writing experience through the flow of ink. With its
+                      ultra-low viscosity hybrid ink, it delivers a smoother and more consistent writing feel, offering greater comfort and stability
+                      in everyday writing.
+                    </p>
+                    <a href="" class="btn">VIEW ALL <span class="material-symbols-outlined"> arrow_outward </span></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <script>
       const customBullets = [
         `
@@ -328,6 +408,13 @@
         `<h3>Digital</h3><span class="material-symbols-outlined">arrow_forward</span>`,
       ];
 
+      const brandCustomPagination = [
+        `<img src="../images/main/brand-tab01.png">`,
+        `<img src="../images/main/brand-tab02.png">`,
+        `<img src="../images/main/brand-tab03.png">`,
+        `<img src="../images/main/brand-tab04.png">`,
+      ];
+
       const mainSlider = new Swiper(".main-visual", {
         loop: true,
         speed: 1000,
@@ -362,6 +449,12 @@
           renderBullet: function (index, className) {
             return `<div class="${className}">${penCustomBullet[index]}</div>`;
           },
+        },
+      });
+      const brandSlider = new Swiper(".brand .mask", {
+        pagination: {
+          el: ".brand .pagination",
+          clickable: true,
         },
       });
     </script>
