@@ -303,18 +303,61 @@ body {
   }
 }
 .brand {
+  padding: 150px 0;
   .slider {
+    margin-top: 100px;
     .mask {
       overflow: hidden;
+      margin-top: 50px;
     }
     li {
       display: flex;
       align-items: center;
+      gap: 60px;
       .img-box {
         flex-basis: 50%;
         flex-shrink: 0;
         img {
           width: 100%;
+        }
+      }
+      .info-box {
+        .info {
+          margin-top: 100px;
+          .title {
+            font-size: 32px;
+            font-weight: 500;
+          }
+          .btn {
+            @extend %button-base;
+            display: inline-flex;
+            align-items: center;
+            border-radius: 100px;
+            border: 1px solid #333;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+    .pagination {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      gap: 0 10px;
+      .swiper-pagination-bullet {
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        background: none;
+        padding: 10px 30px;
+        // border-top: 1px solid #333;
+        border-bottom: 2px solid transparent;
+        &-active {
+          opacity: 1;
+          border-bottom: 2px solid #333;
+        }
+        img {
+          height: 50px;
         }
       }
     }

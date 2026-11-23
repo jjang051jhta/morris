@@ -1,4 +1,4 @@
-.pen .slider .mask a, .main-visual .pagination .swiper-pagination-bullet .txt .btn, .btn-link {
+.brand .slider li .info-box .info .btn, .pen .slider .mask a, .main-visual .pagination .swiper-pagination-bullet .txt .btn, .btn-link {
   padding: 12px 20px;
   border: none;
   border-radius: 100px;
@@ -305,12 +305,20 @@ body {
   margin-left: 20px;
 }
 
+.brand {
+  padding: 150px 0;
+}
+.brand .slider {
+  margin-top: 100px;
+}
 .brand .slider .mask {
   overflow: hidden;
+  margin-top: 50px;
 }
 .brand .slider li {
   display: flex;
   align-items: center;
+  gap: 60px;
 }
 .brand .slider li .img-box {
   flex-basis: 50%;
@@ -318,4 +326,39 @@ body {
 }
 .brand .slider li .img-box img {
   width: 100%;
+}
+.brand .slider li .info-box .info {
+  margin-top: 100px;
+}
+.brand .slider li .info-box .info .title {
+  font-size: 32px;
+  font-weight: 500;
+}
+.brand .slider li .info-box .info .btn {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid #333;
+  margin-top: 50px;
+}
+.brand .slider .pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 0 10px;
+}
+.brand .slider .pagination .swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: none;
+  padding: 10px 30px;
+  border-bottom: 2px solid transparent;
+}
+.brand .slider .pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  border-bottom: 2px solid #333;
+}
+.brand .slider .pagination .swiper-pagination-bullet img {
+  height: 50px;
 }
