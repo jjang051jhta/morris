@@ -412,6 +412,18 @@ body {
           border-radius: 0;
         }
       }
+      .date-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        .category {
+          font-size: 20px;
+        }
+      }
+      .info {
+        @include ellipsis(2);
+      }
     }
   }
 }

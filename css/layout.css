@@ -420,3 +420,19 @@ body {
 .press .slider li:hover .img-box {
   border-radius: 0;
 }
+.press .slider li .date-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.press .slider li .date-box .category {
+  font-size: 20px;
+}
+.press .slider li .info {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
