@@ -384,6 +384,102 @@
         </ul>
       </div>
     </section>
+    <section class="press">
+      <div class="container">
+        <div class="title-box">
+          <h2 class="heading02">PRESS</h2>
+          <p class="desc">
+            Redefining every writing moment <br />
+            — the new collection from Morris
+          </p>
+        </div>
+        <div class="slider">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/press01.jpg" alt="" />
+                </div>
+                <div class="date">
+                  <span class="category">MEDIA</span>
+                  <span class="date">2026.11.23</span>
+                </div>
+                <div class="info">Pen Drawing with MORRIS</div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/press02.jpg" alt="" />
+                </div>
+                <div class="date">
+                  <span class="category">MEDIA</span>
+                  <span class="date">2026.11.23</span>
+                </div>
+                <div class="info">Morris Offers DIY Color Pen Experience at SISOFAIR 2026 with Interactive Booth</div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/press03.jpg" alt="" />
+                </div>
+                <div class="date">
+                  <span class="category">MEDIA</span>
+                  <span class="date">2026.11.23</span>
+                </div>
+                <div class="info">Morris Offers DIY Color Pen Experience at SISOFAIR 2026 with Interactive Booth</div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/press04.jpg" alt="" />
+                </div>
+                <div class="date">
+                  <span class="category">MEDIA</span>
+                  <span class="date">2026.11.23</span>
+                </div>
+                <div class="info">Morris Offers DIY Color Pen Experience at SISOFAIR 2026 with Interactive Booth</div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/press05.jpg" alt="" />
+                </div>
+                <div class="date">
+                  <span class="category">MEDIA</span>
+                  <span class="date">2026.11.23</span>
+                </div>
+                <div class="info">Morris Offers DIY Color Pen Experience at SISOFAIR 2026 with Interactive Booth</div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/press06.jpg" alt="" />
+                </div>
+                <div class="date">
+                  <span class="category">MEDIA</span>
+                  <span class="date">2026.11.23</span>
+                </div>
+                <div class="info">Morris Offers DIY Color Pen Experience at SISOFAIR 2026 with Interactive Booth</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="pagination-box">
+          <div class="pagination"></div>
+          <div class="nav">
+            <span class="material-symbols-outlined btn-prev"> arrow_back </span>
+            <span class="material-symbols-outlined btn-next"> arrow_forward </span>
+          </div>
+        </div>
+
+        <a href="" class="btn btn-link">ALL PRODUCTS <span class="material-symbols-outlined"> arrow_outward </span></a>
+      </div>
+    </section>
     <script>
       const customBullets = [
         `
@@ -497,6 +593,20 @@
           renderBullet: function (index, className) {
             return `<div class="${className}">${brandCustomBullets[index]}</div>`;
           },
+        },
+      });
+
+      const pressSlider = new Swiper(".press .slider", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        speed: 1000,
+        pagination: {
+          el: ".press .pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".press .pagination-box .btn-next",
+          prevEl: ".press .pagination-box .btn-prev",
         },
       });
     </script>
