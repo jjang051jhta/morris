@@ -468,7 +468,75 @@ body {
     .copyright-box {
       flex-grow: 1;
       padding: 0 100px;
-      dl 
+      margin-left: 100px;
+      border-left: 1px solid #fff;
+      .copyright {
+        margin-bottom: 50px;
+      }
+      dl {
+        display: flex;
+        flex-wrap: wrap;
+        div {
+          display: flex;
+        }
+        .address {
+          flex-basis: 100%;
+        }
+        .tel {
+          flex-basis: 100%;
+        }
+        dt {
+          display: flex;
+          align-items: center;
+        }
+        dt:after {
+          content: "";
+          display: inline-flex;
+          width: 1px;
+          height: 12px;
+          background-color: #fff;
+          margin: 0 10px;
+        }
+      }
+    }
+    .info-box {
+      dl {
+        display: flex;
+        flex-direction: column;
+        div {
+          display: flex;
+        }
+      }
+      dt {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        &:after {
+          content: "";
+          display: inline-flex;
+          width: 1px;
+          height: 12px;
+          background-color: #fff;
+          margin: 0 10px;
+        }
+      }
+      dd {
+        white-space: nowrap;
+      }
+    }
+  }
+  .lower {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .company {
+      font-size: 5vw;
+      font-weight: 500;
+    }
+    .sns {
+      display: flex;
+      gap: 15px;
     }
   }
 }

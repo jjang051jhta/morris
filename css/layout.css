@@ -481,4 +481,71 @@ body {
 .footer .upper .copyright-box {
   flex-grow: 1;
   padding: 0 100px;
+  margin-left: 100px;
+  border-left: 1px solid #fff;
+}
+.footer .upper .copyright-box .copyright {
+  margin-bottom: 50px;
+}
+.footer .upper .copyright-box dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .upper .copyright-box dl div {
+  display: flex;
+}
+.footer .upper .copyright-box dl .address {
+  flex-basis: 100%;
+}
+.footer .upper .copyright-box dl .tel {
+  flex-basis: 100%;
+}
+.footer .upper .copyright-box dl dt {
+  display: flex;
+  align-items: center;
+}
+.footer .upper .copyright-box dl dt:after {
+  content: "";
+  display: inline-flex;
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+.footer .upper .info-box dl {
+  display: flex;
+  flex-direction: column;
+}
+.footer .upper .info-box dl div {
+  display: flex;
+}
+.footer .upper .info-box dt {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.footer .upper .info-box dt:after {
+  content: "";
+  display: inline-flex;
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+.footer .upper .info-box dd {
+  white-space: nowrap;
+}
+.footer .lower {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .lower .company {
+  font-size: 5vw;
+  font-weight: 500;
+}
+.footer .lower .sns {
+  display: flex;
+  gap: 15px;
 }
