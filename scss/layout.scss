@@ -427,3 +427,34 @@ body {
     }
   }
 }
+.contact {
+  background-image: url("../images/main/contact_bg.jpg");
+  background-size: cover;
+  padding: 150px 0;
+  color: #fff;
+  h3 {
+    text-align: center;
+    margin: 50px 0;
+    line-height: 1.25;
+  }
+  .list {
+    display: flex;
+    gap: 20px;
+    li {
+      flex: 0 1 25%;
+      padding: 50px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.25);
+      .title {
+        font-size: 24px;
+        margin: 20px 0;
+      }
+      span {
+        font-size: 36px;
+        padding: 20px;
+        border-radius: 300px;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}
