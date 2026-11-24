@@ -445,6 +445,7 @@ body {
       padding: 50px;
       box-sizing: border-box;
       background-color: rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
       .title {
         font-size: 24px;
         margin: 20px 0;
@@ -455,6 +456,19 @@ body {
         border-radius: 300px;
         border: 1px solid #fff;
       }
+    }
+  }
+}
+.footer {
+  background-color: #252525;
+  padding: 100px 0;
+  color: #fff;
+  .upper {
+    display: flex;
+    .copyright-box {
+      flex-grow: 1;
+      padding: 0 100px;
+      dl 
     }
   }
 }
